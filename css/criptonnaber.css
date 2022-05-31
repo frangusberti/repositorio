@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  color: #fff;
+}
+body {
+  background-image: url(../img/Lawrencium.jpg);
+  background-size: cover;
+  color: aliceblue;
+  height: 100vh;
+}
+.inicio {
+  color: #00ffff;
+  font-size: 25px;
+}
+.inicio__pie {
+  font-size: 15px;
+  color: rgb(0, 183, 255);
+  font-family: "Public Sans", sans-serif;
+}
+
+.descripcion {
+  display: grid;
+  font-family: "Public Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: justify;
+
+  max-width: 70%;
+}
+#pie {
+  display: grid;
+  width: 300px;
+  text-align: left;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .foto img {
+    display: grid;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    max-width: 500px;
+  }
+  .textos {
+    text-align: left;
+    margin-top: 300px;
+  }
+}
+
+.textos {
+  width: 1000px;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.texto {
+  font-size: 25px;
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+}
+.coment {
+  position: relative;
+  left: 50px;
+}
+.parrafos {
+  margin-right: 1000px;
+}
+
+.Nombre {
+  font-family: "Orbitron", sans-serif;
+  color: #00ffff;
+  display: inline;
+  width: 80%;
+  max-width: 350px;
+}
+.titulos {
+  font-family: "Exo 2", sans-serif;
+  color: #00ffff;
+  display: inline;
+  font-size: 50px;
+}
+.subtitulo {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+#grafico {
+  width: 2000px;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  background: #00ffff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+.boton span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+.boton::after {
+  content: "";
+  width: 102%;
+  height: 102%;
+  background: gray;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.boton:hover::after {
+  top: 0;
+}
+/* menu desplegable */
+#btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+  width: 40px;
+  height: auto;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+header label:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.399);
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  justify-content: space-around;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+}
+.menu li {
+  border-right: 1px solid #fff;
+  background: #fff;
+}
+.menu li ul {
+  display: hidden;
+}
+.menu li ul:hover {
+  display: block;
+}
+.menu li:hover {
+  background: rgb(124, 124, 124);
+}
+.menu li a {
+  display: hidden;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.submenu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: black;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.submenu li:hover {
+  display: hidden;
+}
+.submenu li a {
+  display: block;
+  color: rgb(255, 253, 253);
+  padding: 15px;
+}
+
+/* menu flex */
+
+@media (max-width: 1024px) {
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #00ffff;
+    width: 120px;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .submenu {
+    position: relative;
+    left: 120px;
+    height: 40px;
+    font-size: medium;
+    width: 120px;
+    justify-content: center;
+  }
+  .menu ul {
+    flex-direction: column;
+    padding: 0.1%;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .Nombre {
+    font-family: "Orbitron", sans-serif;
+    color: #00ffff;
+    display: inline;
+    max-width: 200px;
+    font-size: 30px;
+  }
+  .descripcion {
+    font-size: 30px;
+    text-align: left;
+  }
+  .textos {
+    font-size: 10px;
+    width: 80%;
+    max-width: auto;
+    text-align: left;
+  }
+  .foto img {
+    display: grid;
+    max-width: 60%;
+    position: relative;
+    right: -30%;
+    top: 10%;
+  }
+  #pie {
+    position: relative;
+    top: 100%;
+    margin-top: 10%;
+    display: grid;
+  }
+}
+@media (max-width: 600px) {
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #00ffff;
+
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .submenu {
+    position: relative;
+    left: 120px;
+    height: 40px;
+    font-size: medium;
+    width: 120px;
+    justify-content: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .Nombre {
+    font-family: "Orbitron", sans-serif;
+    color: #00ffff;
+    display: inline;
+    max-width: 200px;
+    font-size: 30px;
+  }
+  .descripcion {
+    font-size: 20px;
+    text-align: left;
+  }
+  .textos {
+    font-size: 10px;
+    width: 80%;
+    max-width: auto;
+    text-align: left;
+  }
+  .foto img {
+    display: grid;
+    max-width: 60%;
+    position: relative;
+    right: auto;
+    top: 10%;
+  }
+  #pie {
+    top: 100%;
+    margin-top: 20%;
+    display: grid;
+  }
+}
