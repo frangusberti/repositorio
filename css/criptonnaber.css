@@ -39,6 +39,7 @@ body {
   width: 300px;
   text-align: left;
   margin-top: 20px;
+  bottom: 0;
 }
 @media (min-width: 1024px) {
   .foto img {

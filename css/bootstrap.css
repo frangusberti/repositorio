@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/Lawrencium.jpg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 3.5em;
+  color: azure;
+}
+
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  color: #00ffff;
+}
+#navbarScroll {
+  font-family: "Orbitron", sans-serif;
+}
+.row {
+  position: relative;
+  left: 25%;
+}
+.textos {
+  width: 1000px;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+  color: antiquewhite;
+  margin: 20px 0;
+}
+.descripcion {
+  display: grid;
+
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: justify;
+  max-width: 70%;
+  font-family: "Orbitron", sans-serif;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer {
+  color: rgb(255, 255, 255);
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  bottom: 0;
+  padding: 1em 0;
+}
+.carousel-inner h3 {
+  background-color: rgb(5, 226, 255);
+  color: black;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
