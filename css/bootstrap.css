@@ -92,8 +92,8 @@ footer {
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
-  background-color: #ecb21f;
-  border-color: #a88734 #9c7e31 #846a29;
+  background-color: #00f7ff;
+  border-color: #00f7ff #00f7ff #00f7ff;
   color: black;
   border-width: 1px;
   border-style: solid;
@@ -117,7 +117,7 @@ body {
 }
 
 .darker {
-  border: 1px solid #ecb21f;
+  border: 1px solid #00f7ff;
   background-color: black;
   float: right;
   border-radius: 5px;
