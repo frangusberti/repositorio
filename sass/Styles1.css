@@ -1,0 +1,217 @@
+/* foro */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/Lawrencium.jpg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 3.5em;
+  color: azure;
+  background-color: black;
+}
+
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  color: #00ffff;
+}
+
+#navbarScroll {
+  font-family: "Orbitron", sans-serif;
+}
+
+.row {
+  position: relative;
+  left: 25%;
+}
+
+.textos {
+  width: 1000px;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+  color: antiquewhite;
+  margin: 20px 0;
+}
+
+.descripcion {
+  display: -ms-grid;
+  display: grid;
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  max-width: 70%;
+  font-family: "Orbitron", sans-serif;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  bottom: 0;
+  padding: 1em 0;
+}
+
+.carousel-inner h3 {
+  background-color: #05e2ff;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#clicked {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  width: 100%;
+  background-color: #ecb21f;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 13px;
+}
+
+#profile {
+  background-color: unset;
+  text-decoration: none;
+  color: #e0dbdb;
+  background-color: black;
+}
+
+#post {
+  margin: 10px;
+  padding: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: #00f7ff;
+  border-color: #00f7ff #00f7ff #00f7ff;
+  color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 13px;
+  width: 50%;
+}
+
+.comments {
+  margin-top: 5%;
+  margin-left: 20px;
+}
+
+.darker {
+  border: 1px solid #00f7ff;
+  background-color: black;
+  float: right;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.darker h4 {
+  display: inline;
+}
+
+.darker span {
+  display: inline;
+  color: #b8b7b7;
+}
+
+.darker p {
+  color: #b8b7b7;
+}
+
+.comment {
+  border: 1px solid #102e2e;
+  background-color: rgba(16, 46, 46, 0.973);
+  float: left;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.comment h4 {
+  display: inline;
+}
+
+.comment span {
+  display: inline;
+  color: #b8b7b7;
+}
+
+.comment p {
+  color: #b8b7b7;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
+
+h4 {
+  color: white;
+  font-weight: bold;
+}
+
+label {
+  color: #d4d0d0;
+}
+
+#align-form {
+  margin-top: 20px;
+}
+
+.form-group p a {
+  color: white;
+}
+
+.form-group input {
+  background-color: black;
+  border: 1px solid #102e2e;
+  border-radius: 12px;
+}
+
+.form-group textarea {
+  background-color: black;
+  border: 1px solid #102e2e;
+  border-radius: 12px;
+}
+
+#checkbx {
+  background-color: black;
+}
+
+#darker img {
+  margin-right: 15px;
+  position: static;
+}
+
+form {
+  border: 1px solid #102e2e;
+  background-color: rgba(16, 46, 46, 0.973);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media (min-width: 568px) {
+  .end {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #post {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Styles1.css.map */

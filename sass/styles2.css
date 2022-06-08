@@ -1,0 +1,614 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  color: #fff;
+}
+
+header label {
+  display: none;
+  width: 40px;
+  height: auto;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.399);
+}
+
+body {
+  background-image: url(../img/Lawrencium.jpg);
+  background-size: cover;
+  color: aliceblue;
+  height: 100vh;
+}
+
+.inicio {
+  color: #00ffff;
+  font-size: 25px;
+}
+
+.inicio__pie {
+  font-size: 15px;
+  color: #00b7ff;
+  font-family: "Public Sans", sans-serif;
+}
+
+.descripcion {
+  display: -ms-grid;
+  display: grid;
+  font-family: "Public Sans", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  max-width: 70%;
+}
+
+#pie {
+  display: -ms-grid;
+  display: grid;
+  width: 300px;
+  text-align: left;
+  margin-top: 20px;
+  bottom: 0;
+}
+
+.textos {
+  width: 1000px;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.texto {
+  font-size: 25px;
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+}
+
+.coment {
+  position: relative;
+  left: 50px;
+}
+
+.parrafos {
+  margin-right: 1000px;
+}
+
+.Nombre {
+  font-family: "Orbitron", sans-serif;
+  color: #00ffff;
+  display: inline;
+  width: 80%;
+  max-width: 350px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.titulos {
+  font-family: "Exo 2", sans-serif;
+  color: #00ffff;
+  display: inline;
+  font-size: 50px;
+}
+
+.subtitulo {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+#grafico {
+  width: 2000px;
+}
+
+.boton {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  background: #00ffff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton span {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.boton::after {
+  content: "";
+  width: 102%;
+  height: 102%;
+  background: gray;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.boton:hover::after {
+  top: 0;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.menu {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+}
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid #fff;
+  background: #fff;
+}
+
+.menu li ul {
+  display: hidden;
+}
+
+.menu li ul:hover {
+  display: block;
+}
+
+.menu li:hover {
+  background: #7c7c7c;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.menu li a {
+  display: hidden;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: black;
+}
+
+.submenu li:hover {
+  display: hidden;
+}
+
+.submenu li a {
+  display: block;
+  color: #fffdfd;
+  padding: 15px;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: transparent;
+  z-index: 10;
+  font-family: "Orbitron", sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.top-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-div h2 {
+  font-weight: 900;
+  color: #05e2ff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.top-div p {
+  font-size: 12px;
+  font-weight: 900;
+  color: #000000;
+  font-family: "Orbitron", sans-serif;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #000000;
+}
+
+.stats1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
+}
+
+.stats1 span:nth-child(1) {
+  color: #05e2ff;
+  font-size: 18px;
+}
+
+.stats1 span:nth-child(2) {
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.stats1:hover {
+  background-color: rgba(150, 150, 150, 0.315);
+}
+
+.card1 {
+  margin-top: 40px;
+  position: relative;
+  background-color: #240088;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  height: 100%;
+  gap: 20px;
+}
+
+.card1 .form-control {
+  width: 100%;
+  position: relative;
+}
+
+.card1 .form-control input[type="text"] {
+  width: 100%;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  background-color: #f9f9fb5d;
+}
+
+.card1 .form-control span {
+  position: absolute;
+  top: 32px;
+  font-size: 12px;
+  left: 24px;
+}
+
+.card1 .form-control i {
+  position: absolute;
+  top: 33px;
+  left: 3px;
+  font-size: 14px;
+}
+
+.card1 .form-control .fa-mobile-phone {
+  position: absolute;
+  top: 30px;
+  left: 3px;
+  font-size: 22px;
+}
+
+.card1 .right {
+  margin-top: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card1 .right textarea {
+  height: 140px;
+  resize: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  padding-top: 7px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card1 .right .text-area span {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-size: 12px;
+  color: #000000;
+}
+
+.form-control input:focus ~ span {
+  top: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.form-control input:valid ~ span {
+  top: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.text-area {
+  position: relative;
+}
+
+.text-area textarea:focus ~ span {
+  top: -20px !important;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.text-area textarea:valid ~ span {
+  top: -20px !important;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.button button {
+  height: 30px;
+  width: 200px;
+  border: none;
+  background-color: #05e2ff;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+  .foto img {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    max-width: 500px;
+  }
+  .textos {
+    text-align: left;
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #00ffff;
+    width: 120px;
+    margin-left: -70%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.1%;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  .submenu {
+    position: relative;
+    left: 120px;
+    height: 40px;
+    font-size: medium;
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .Nombre {
+    font-family: "Orbitron", sans-serif;
+    color: #00ffff;
+    display: inline;
+    max-width: 200px;
+    font-size: 30px;
+  }
+  .descripcion {
+    font-size: 30px;
+    text-align: left;
+  }
+  .textos {
+    font-size: 10px;
+    width: 80%;
+    max-width: auto;
+    text-align: left;
+  }
+  .foto img {
+    display: -ms-grid;
+    display: grid;
+    max-width: 60%;
+    position: relative;
+    right: -30%;
+    top: 10%;
+  }
+  #pie {
+    position: relative;
+    top: 100%;
+    margin-top: 10%;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (max-width: 600px) {
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #00ffff;
+    margin-left: -70%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  .submenu {
+    position: relative;
+    left: 120px;
+    height: 40px;
+    font-size: medium;
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .Nombre {
+    font-family: "Orbitron", sans-serif;
+    color: #00ffff;
+    display: inline;
+    max-width: 200px;
+    font-size: 30px;
+  }
+  .descripcion {
+    font-size: 20px;
+    text-align: left;
+  }
+  .textos {
+    font-size: 10px;
+    width: 80%;
+    max-width: auto;
+    text-align: left;
+  }
+  .foto img {
+    display: -ms-grid;
+    display: grid;
+    max-width: 60%;
+    position: relative;
+    right: auto;
+    top: 10%;
+  }
+  #pie {
+    top: 100%;
+    margin-top: 20%;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (max-width: 400px) {
+  .card1 {
+    display: block;
+  }
+}
+/*# sourceMappingURL=styles2.css.map */
