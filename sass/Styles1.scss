@@ -192,7 +192,9 @@ form {
 }
 
 $colores: (
-  base: rgb(5, 226, 255) principal: rgb(255, 255, 255) fondo: rgb(76, 0, 255),
+  "base": rgb(5, 226, 255),
+  "principal": rgb(255, 255, 255),
+  "fondo": rgb(76, 0, 255),
 );
 
 /* mixins */
