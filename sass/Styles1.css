@@ -5,9 +5,10 @@
   text-decoration: none;
   list-style: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* colores */
 body {
   background-image: url(../img/Lawrencium.jpg);
   background-size: cover;
@@ -58,6 +59,7 @@ footer {
   position: relative;
   bottom: 0;
   padding: 1em 0;
+  text-align: center;
 }
 
 .carousel-inner h3 {
@@ -93,8 +95,8 @@ footer {
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
-  background-color: #00f7ff;
-  border-color: #00f7ff #00f7ff #00f7ff;
+  background-color: #00ffff;
+  border-color: #00ffff #00ffff #00ffff;
   color: black;
   border-width: 1px;
   border-style: solid;
@@ -108,7 +110,7 @@ footer {
 }
 
 .darker {
-  border: 1px solid #00f7ff;
+  border: 1px solid #00ffff;
   background-color: black;
   float: right;
   border-radius: 5px;
